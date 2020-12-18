@@ -1,5 +1,7 @@
 package main;
 
+import java.util.Comparator;
+
 public class Movie {
     String id, title, genre;
     int price, rating;
@@ -38,4 +40,12 @@ public class Movie {
     public int getPrice() {
         return price;
     }
+    
+    //sort by name
+    public static Comparator<Movie> sortByName = new Comparator<Movie>() {
+        @Override
+        public int compare(Movie o1, Movie o2) {
+            return o1.title.compareTo(o2.title);
+        }
+    }; 
 }
