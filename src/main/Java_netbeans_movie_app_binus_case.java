@@ -10,7 +10,7 @@ public class Java_netbeans_movie_app_binus_case {
 
     public static void main(String[] args) {
         ArrayList<Movie> movies = new ArrayList();
-        Scanner sc = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
         int pilih = 0;
     
         do{
